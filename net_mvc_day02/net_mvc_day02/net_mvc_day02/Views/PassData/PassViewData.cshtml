@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewBag.Title = "PassViewData";
+}
+
+<h2>PassViewData</h2>
+<ul>
+    <!--ViewData 有公開GetEnumerator() 方法，故可用foreach 存取ViewData 資料-->
+    @foreach (var item in ViewData)
+    {
+        <li>@item.Key,@item.Value</li>
+
+    }
+    <li>Name:@ViewBag.Name</li>
+</ul>
