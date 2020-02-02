@@ -1,0 +1,572 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="TCP_ethernet_ImmediatelyModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Master_data">
+          <Key>
+            <PropertyRef Name="Vall" />
+          </Key>
+          <Property Name="datatime" Type="datetime" />
+          <Property Name="Vall" Type="float" Nullable="false" />
+          <Property Name="State" Type="varbinary" MaxLength="50" />
+          <Property Name="I_pos" Type="varbinary" MaxLength="50" />
+          <Property Name="I_System" Type="float" />
+          <Property Name="Switch" Type="varchar" MaxLength="50" />
+          <Property Name="Warning" Type="varchar" MaxLength="50" />
+          <Property Name="AHC_min" Type="float" />
+          <Property Name="SOC_min" Type="float" />
+          <Property Name="Charger_con" Type="int" />
+          <Property Name="Tag_Vmax" Type="varchar" MaxLength="50" />
+          <Property Name="Tag_Vmin" Type="varchar" MaxLength="50" />
+          <Property Name="Tag_Tmax" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Master_data1">
+          <Key>
+            <PropertyRef Name="Vall" />
+          </Key>
+          <Property Name="datatime" Type="datetime" />
+          <Property Name="Vall" Type="float" Nullable="false" />
+          <Property Name="State" Type="varbinary" MaxLength="50" />
+          <Property Name="I_pos" Type="varbinary" MaxLength="50" />
+          <Property Name="I_System" Type="float" />
+          <Property Name="Switch" Type="varchar" MaxLength="50" />
+          <Property Name="Warning" Type="varchar" MaxLength="50" />
+          <Property Name="AHC_min" Type="float" />
+          <Property Name="SOC_min" Type="float" />
+          <Property Name="Charger_con" Type="int" />
+          <Property Name="Tag_Vmax" Type="varchar" MaxLength="50" />
+          <Property Name="Tag_Vmin" Type="varchar" MaxLength="50" />
+          <Property Name="Tag_Tmax" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <!--產生期間發現錯誤:
+警告 6002: 資料表/檢視 'TCP_ethernet_Immediately.dbo.Module_data' 未定義主索引鍵。已推斷此索引鍵，並將定義建立成唯讀的資料表/檢視。-->
+        <EntityType Name="Module_data">
+          <Key>
+            <PropertyRef Name="datatime" />
+            <PropertyRef Name="Module_id" />
+          </Key>
+          <Property Name="datatime" Type="datetime" Nullable="false" />
+          <Property Name="Module_id" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="V1" Type="float" />
+          <Property Name="V2" Type="float" />
+          <Property Name="V3" Type="float" />
+          <Property Name="V4" Type="float" />
+          <Property Name="V5" Type="float" />
+          <Property Name="V6" Type="float" />
+          <Property Name="V7" Type="float" />
+          <Property Name="V8" Type="float" />
+          <Property Name="T1" Type="float" />
+          <Property Name="T2" Type="float" />
+          <Property Name="T3" Type="float" />
+          <Property Name="T4" Type="float" />
+          <Property Name="T5" Type="float" />
+          <Property Name="T6" Type="float" />
+          <Property Name="T7" Type="float" />
+          <Property Name="T8" Type="float" />
+          <Property Name="SOC" Type="float" />
+          <Property Name="AHC" Type="float" />
+        </EntityType>
+        <!--產生期間發現錯誤:
+警告 6002: 資料表/檢視 'TCP_ethernet_Immediately.dbo.Module_data1' 未定義主索引鍵。已推斷此索引鍵，並將定義建立成唯讀的資料表/檢視。-->
+        <EntityType Name="Module_data1">
+          <Key>
+            <PropertyRef Name="datatime" />
+            <PropertyRef Name="Module_id" />
+          </Key>
+          <Property Name="datatime" Type="datetime" Nullable="false" />
+          <Property Name="Module_id" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="V1" Type="float" />
+          <Property Name="V2" Type="float" />
+          <Property Name="V3" Type="float" />
+          <Property Name="V4" Type="float" />
+          <Property Name="V5" Type="float" />
+          <Property Name="V6" Type="float" />
+          <Property Name="V7" Type="float" />
+          <Property Name="V8" Type="float" />
+          <Property Name="T1" Type="float" />
+          <Property Name="T2" Type="float" />
+          <Property Name="T3" Type="float" />
+          <Property Name="T4" Type="float" />
+          <Property Name="T5" Type="float" />
+          <Property Name="T6" Type="float" />
+          <Property Name="T7" Type="float" />
+          <Property Name="T8" Type="float" />
+          <Property Name="SOC" Type="float" />
+          <Property Name="AHC" Type="float" />
+        </EntityType>
+        <!--產生期間發現錯誤:
+警告 6002: 資料表/檢視 'TCP_ethernet_Immediately.dbo.Module_main_data' 未定義主索引鍵。已推斷此索引鍵，並將定義建立成唯讀的資料表/檢視。-->
+        <EntityType Name="Module_main_data">
+          <Key>
+            <PropertyRef Name="datatime" />
+            <PropertyRef Name="Module_id" />
+            <PropertyRef Name="Vt" />
+            <PropertyRef Name="I_Ba" />
+            <PropertyRef Name="Ba_site" />
+            <PropertyRef Name="BaF" />
+            <PropertyRef Name="Warning" />
+            <PropertyRef Name="Ba_sw" />
+          </Key>
+          <Property Name="datatime" Type="datetime" Nullable="false" />
+          <Property Name="Module_id" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Vt" Type="float" Nullable="false" />
+          <Property Name="Vmax" Type="float" />
+          <Property Name="Vmin" Type="float" />
+          <Property Name="Tmax" Type="float" />
+          <Property Name="SOC" Type="float" />
+          <Property Name="AHC" Type="float" />
+          <Property Name="Tag_Vmax" Type="float" />
+          <Property Name="Tag_Vmin" Type="float" />
+          <Property Name="Tag_Tmax" Type="float" />
+          <Property Name="I_Ba" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Ba_site" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="BaF" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Warning" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Ba_sw" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <!--產生期間發現錯誤:
+警告 6002: 資料表/檢視 'TCP_ethernet_Immediately.dbo.Module_main_data1' 未定義主索引鍵。已推斷此索引鍵，並將定義建立成唯讀的資料表/檢視。-->
+        <EntityType Name="Module_main_data1">
+          <Key>
+            <PropertyRef Name="datatime" />
+            <PropertyRef Name="Module_id" />
+            <PropertyRef Name="Vt" />
+            <PropertyRef Name="I_Ba" />
+            <PropertyRef Name="Ba_site" />
+            <PropertyRef Name="BaF" />
+            <PropertyRef Name="Warning" />
+            <PropertyRef Name="Ba_sw" />
+          </Key>
+          <Property Name="datatime" Type="datetime" Nullable="false" />
+          <Property Name="Module_id" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Vt" Type="float" Nullable="false" />
+          <Property Name="Vmax" Type="float" />
+          <Property Name="Vmin" Type="float" />
+          <Property Name="Tmax" Type="float" />
+          <Property Name="SOC" Type="float" />
+          <Property Name="AHC" Type="float" />
+          <Property Name="Tag_Vmax" Type="float" />
+          <Property Name="Tag_Vmin" Type="float" />
+          <Property Name="Tag_Tmax" Type="float" />
+          <Property Name="I_Ba" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Ba_site" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="BaF" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Warning" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Ba_sw" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="TCP_ethernet_ImmediatelyModelStoreContainer">
+          <EntitySet Name="Master_data" EntityType="Self.Master_data" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Master_data1" EntityType="Self.Master_data1" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Module_data" EntityType="Self.Module_data" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [Module_data].[datatime] AS [datatime], 
+    [Module_data].[Module_id] AS [Module_id], 
+    [Module_data].[V1] AS [V1], 
+    [Module_data].[V2] AS [V2], 
+    [Module_data].[V3] AS [V3], 
+    [Module_data].[V4] AS [V4], 
+    [Module_data].[V5] AS [V5], 
+    [Module_data].[V6] AS [V6], 
+    [Module_data].[V7] AS [V7], 
+    [Module_data].[V8] AS [V8], 
+    [Module_data].[T1] AS [T1], 
+    [Module_data].[T2] AS [T2], 
+    [Module_data].[T3] AS [T3], 
+    [Module_data].[T4] AS [T4], 
+    [Module_data].[T5] AS [T5], 
+    [Module_data].[T6] AS [T6], 
+    [Module_data].[T7] AS [T7], 
+    [Module_data].[T8] AS [T8], 
+    [Module_data].[SOC] AS [SOC], 
+    [Module_data].[AHC] AS [AHC]
+    FROM [dbo].[Module_data] AS [Module_data]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="Module_data1" EntityType="Self.Module_data1" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [Module_data1].[datatime] AS [datatime], 
+    [Module_data1].[Module_id] AS [Module_id], 
+    [Module_data1].[V1] AS [V1], 
+    [Module_data1].[V2] AS [V2], 
+    [Module_data1].[V3] AS [V3], 
+    [Module_data1].[V4] AS [V4], 
+    [Module_data1].[V5] AS [V5], 
+    [Module_data1].[V6] AS [V6], 
+    [Module_data1].[V7] AS [V7], 
+    [Module_data1].[V8] AS [V8], 
+    [Module_data1].[T1] AS [T1], 
+    [Module_data1].[T2] AS [T2], 
+    [Module_data1].[T3] AS [T3], 
+    [Module_data1].[T4] AS [T4], 
+    [Module_data1].[T5] AS [T5], 
+    [Module_data1].[T6] AS [T6], 
+    [Module_data1].[T7] AS [T7], 
+    [Module_data1].[T8] AS [T8], 
+    [Module_data1].[SOC] AS [SOC], 
+    [Module_data1].[AHC] AS [AHC]
+    FROM [dbo].[Module_data1] AS [Module_data1]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="Module_main_data" EntityType="Self.Module_main_data" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [Module_main_data].[datatime] AS [datatime], 
+    [Module_main_data].[Module_id] AS [Module_id], 
+    [Module_main_data].[Vt] AS [Vt], 
+    [Module_main_data].[Vmax] AS [Vmax], 
+    [Module_main_data].[Vmin] AS [Vmin], 
+    [Module_main_data].[Tmax] AS [Tmax], 
+    [Module_main_data].[SOC] AS [SOC], 
+    [Module_main_data].[AHC] AS [AHC], 
+    [Module_main_data].[Tag_Vmax] AS [Tag_Vmax], 
+    [Module_main_data].[Tag_Vmin] AS [Tag_Vmin], 
+    [Module_main_data].[Tag_Tmax] AS [Tag_Tmax], 
+    [Module_main_data].[I_Ba] AS [I_Ba], 
+    [Module_main_data].[Ba_site] AS [Ba_site], 
+    [Module_main_data].[BaF] AS [BaF], 
+    [Module_main_data].[Warning] AS [Warning], 
+    [Module_main_data].[Ba_sw] AS [Ba_sw]
+    FROM [dbo].[Module_main_data] AS [Module_main_data]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="Module_main_data1" EntityType="Self.Module_main_data1" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [Module_main_data1].[datatime] AS [datatime], 
+    [Module_main_data1].[Module_id] AS [Module_id], 
+    [Module_main_data1].[Vt] AS [Vt], 
+    [Module_main_data1].[Vmax] AS [Vmax], 
+    [Module_main_data1].[Vmin] AS [Vmin], 
+    [Module_main_data1].[Tmax] AS [Tmax], 
+    [Module_main_data1].[SOC] AS [SOC], 
+    [Module_main_data1].[AHC] AS [AHC], 
+    [Module_main_data1].[Tag_Vmax] AS [Tag_Vmax], 
+    [Module_main_data1].[Tag_Vmin] AS [Tag_Vmin], 
+    [Module_main_data1].[Tag_Tmax] AS [Tag_Tmax], 
+    [Module_main_data1].[I_Ba] AS [I_Ba], 
+    [Module_main_data1].[Ba_site] AS [Ba_site], 
+    [Module_main_data1].[BaF] AS [BaF], 
+    [Module_main_data1].[Warning] AS [Warning], 
+    [Module_main_data1].[Ba_sw] AS [Ba_sw]
+    FROM [dbo].[Module_main_data1] AS [Module_main_data1]</DefiningQuery>
+          </EntitySet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="TCP_ethernet_ImmediatelyModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Master_data">
+          <Key>
+            <PropertyRef Name="Vall" />
+          </Key>
+          <Property Name="datatime" Type="DateTime" Precision="3" />
+          <Property Name="Vall" Type="Double" Nullable="false" />
+          <Property Name="State" Type="Binary" MaxLength="50" FixedLength="false" />
+          <Property Name="I_pos" Type="Binary" MaxLength="50" FixedLength="false" />
+          <Property Name="I_System" Type="Double" />
+          <Property Name="Switch" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Warning" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="AHC_min" Type="Double" />
+          <Property Name="SOC_min" Type="Double" />
+          <Property Name="Charger_con" Type="Int32" />
+          <Property Name="Tag_Vmax" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Tag_Vmin" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Tag_Tmax" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="Master_data1">
+          <Key>
+            <PropertyRef Name="Vall" />
+          </Key>
+          <Property Name="datatime" Type="DateTime" Precision="3" />
+          <Property Name="Vall" Type="Double" Nullable="false" />
+          <Property Name="State" Type="Binary" MaxLength="50" FixedLength="false" />
+          <Property Name="I_pos" Type="Binary" MaxLength="50" FixedLength="false" />
+          <Property Name="I_System" Type="Double" />
+          <Property Name="Switch" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Warning" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="AHC_min" Type="Double" />
+          <Property Name="SOC_min" Type="Double" />
+          <Property Name="Charger_con" Type="Int32" />
+          <Property Name="Tag_Vmax" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Tag_Vmin" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Tag_Tmax" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="Module_data">
+          <Key>
+            <PropertyRef Name="datatime" />
+            <PropertyRef Name="Module_id" />
+          </Key>
+          <Property Name="datatime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Module_id" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="V1" Type="Double" />
+          <Property Name="V2" Type="Double" />
+          <Property Name="V3" Type="Double" />
+          <Property Name="V4" Type="Double" />
+          <Property Name="V5" Type="Double" />
+          <Property Name="V6" Type="Double" />
+          <Property Name="V7" Type="Double" />
+          <Property Name="V8" Type="Double" />
+          <Property Name="T1" Type="Double" />
+          <Property Name="T2" Type="Double" />
+          <Property Name="T3" Type="Double" />
+          <Property Name="T4" Type="Double" />
+          <Property Name="T5" Type="Double" />
+          <Property Name="T6" Type="Double" />
+          <Property Name="T7" Type="Double" />
+          <Property Name="T8" Type="Double" />
+          <Property Name="SOC" Type="Double" />
+          <Property Name="AHC" Type="Double" />
+        </EntityType>
+        <EntityType Name="Module_data1">
+          <Key>
+            <PropertyRef Name="datatime" />
+            <PropertyRef Name="Module_id" />
+          </Key>
+          <Property Name="datatime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Module_id" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="V1" Type="Double" />
+          <Property Name="V2" Type="Double" />
+          <Property Name="V3" Type="Double" />
+          <Property Name="V4" Type="Double" />
+          <Property Name="V5" Type="Double" />
+          <Property Name="V6" Type="Double" />
+          <Property Name="V7" Type="Double" />
+          <Property Name="V8" Type="Double" />
+          <Property Name="T1" Type="Double" />
+          <Property Name="T2" Type="Double" />
+          <Property Name="T3" Type="Double" />
+          <Property Name="T4" Type="Double" />
+          <Property Name="T5" Type="Double" />
+          <Property Name="T6" Type="Double" />
+          <Property Name="T7" Type="Double" />
+          <Property Name="T8" Type="Double" />
+          <Property Name="SOC" Type="Double" />
+          <Property Name="AHC" Type="Double" />
+        </EntityType>
+        <EntityType Name="Module_main_data">
+          <Key>
+            <PropertyRef Name="datatime" />
+            <PropertyRef Name="Module_id" />
+            <PropertyRef Name="Vt" />
+            <PropertyRef Name="I_Ba" />
+            <PropertyRef Name="Ba_site" />
+            <PropertyRef Name="BaF" />
+            <PropertyRef Name="Warning" />
+            <PropertyRef Name="Ba_sw" />
+          </Key>
+          <Property Name="datatime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Module_id" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Vt" Type="Double" Nullable="false" />
+          <Property Name="Vmax" Type="Double" />
+          <Property Name="Vmin" Type="Double" />
+          <Property Name="Tmax" Type="Double" />
+          <Property Name="SOC" Type="Double" />
+          <Property Name="AHC" Type="Double" />
+          <Property Name="Tag_Vmax" Type="Double" />
+          <Property Name="Tag_Vmin" Type="Double" />
+          <Property Name="Tag_Tmax" Type="Double" />
+          <Property Name="I_Ba" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Ba_site" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="BaF" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Warning" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Ba_sw" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Module_main_data1">
+          <Key>
+            <PropertyRef Name="datatime" />
+            <PropertyRef Name="Module_id" />
+            <PropertyRef Name="Vt" />
+            <PropertyRef Name="I_Ba" />
+            <PropertyRef Name="Ba_site" />
+            <PropertyRef Name="BaF" />
+            <PropertyRef Name="Warning" />
+            <PropertyRef Name="Ba_sw" />
+          </Key>
+          <Property Name="datatime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Module_id" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Vt" Type="Double" Nullable="false" />
+          <Property Name="Vmax" Type="Double" />
+          <Property Name="Vmin" Type="Double" />
+          <Property Name="Tmax" Type="Double" />
+          <Property Name="SOC" Type="Double" />
+          <Property Name="AHC" Type="Double" />
+          <Property Name="Tag_Vmax" Type="Double" />
+          <Property Name="Tag_Vmin" Type="Double" />
+          <Property Name="Tag_Tmax" Type="Double" />
+          <Property Name="I_Ba" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Ba_site" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="BaF" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Warning" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Ba_sw" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="TCP_ethernet_ImmediatelyEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Master_data" EntityType="Self.Master_data" />
+          <EntitySet Name="Master_data1" EntityType="Self.Master_data1" />
+          <EntitySet Name="Module_data" EntityType="Self.Module_data" />
+          <EntitySet Name="Module_data1" EntityType="Self.Module_data1" />
+          <EntitySet Name="Module_main_data" EntityType="Self.Module_main_data" />
+          <EntitySet Name="Module_main_data1" EntityType="Self.Module_main_data1" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="TCP_ethernet_ImmediatelyModelStoreContainer" CdmEntityContainer="TCP_ethernet_ImmediatelyEntities">
+          <EntitySetMapping Name="Master_data">
+            <EntityTypeMapping TypeName="TCP_ethernet_ImmediatelyModel.Master_data">
+              <MappingFragment StoreEntitySet="Master_data">
+                <ScalarProperty Name="datatime" ColumnName="datatime" />
+                <ScalarProperty Name="Vall" ColumnName="Vall" />
+                <ScalarProperty Name="State" ColumnName="State" />
+                <ScalarProperty Name="I_pos" ColumnName="I_pos" />
+                <ScalarProperty Name="I_System" ColumnName="I_System" />
+                <ScalarProperty Name="Switch" ColumnName="Switch" />
+                <ScalarProperty Name="Warning" ColumnName="Warning" />
+                <ScalarProperty Name="AHC_min" ColumnName="AHC_min" />
+                <ScalarProperty Name="SOC_min" ColumnName="SOC_min" />
+                <ScalarProperty Name="Charger_con" ColumnName="Charger_con" />
+                <ScalarProperty Name="Tag_Vmax" ColumnName="Tag_Vmax" />
+                <ScalarProperty Name="Tag_Vmin" ColumnName="Tag_Vmin" />
+                <ScalarProperty Name="Tag_Tmax" ColumnName="Tag_Tmax" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Master_data1">
+            <EntityTypeMapping TypeName="TCP_ethernet_ImmediatelyModel.Master_data1">
+              <MappingFragment StoreEntitySet="Master_data1">
+                <ScalarProperty Name="datatime" ColumnName="datatime" />
+                <ScalarProperty Name="Vall" ColumnName="Vall" />
+                <ScalarProperty Name="State" ColumnName="State" />
+                <ScalarProperty Name="I_pos" ColumnName="I_pos" />
+                <ScalarProperty Name="I_System" ColumnName="I_System" />
+                <ScalarProperty Name="Switch" ColumnName="Switch" />
+                <ScalarProperty Name="Warning" ColumnName="Warning" />
+                <ScalarProperty Name="AHC_min" ColumnName="AHC_min" />
+                <ScalarProperty Name="SOC_min" ColumnName="SOC_min" />
+                <ScalarProperty Name="Charger_con" ColumnName="Charger_con" />
+                <ScalarProperty Name="Tag_Vmax" ColumnName="Tag_Vmax" />
+                <ScalarProperty Name="Tag_Vmin" ColumnName="Tag_Vmin" />
+                <ScalarProperty Name="Tag_Tmax" ColumnName="Tag_Tmax" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Module_data">
+            <EntityTypeMapping TypeName="TCP_ethernet_ImmediatelyModel.Module_data">
+              <MappingFragment StoreEntitySet="Module_data">
+                <ScalarProperty Name="datatime" ColumnName="datatime" />
+                <ScalarProperty Name="Module_id" ColumnName="Module_id" />
+                <ScalarProperty Name="V1" ColumnName="V1" />
+                <ScalarProperty Name="V2" ColumnName="V2" />
+                <ScalarProperty Name="V3" ColumnName="V3" />
+                <ScalarProperty Name="V4" ColumnName="V4" />
+                <ScalarProperty Name="V5" ColumnName="V5" />
+                <ScalarProperty Name="V6" ColumnName="V6" />
+                <ScalarProperty Name="V7" ColumnName="V7" />
+                <ScalarProperty Name="V8" ColumnName="V8" />
+                <ScalarProperty Name="T1" ColumnName="T1" />
+                <ScalarProperty Name="T2" ColumnName="T2" />
+                <ScalarProperty Name="T3" ColumnName="T3" />
+                <ScalarProperty Name="T4" ColumnName="T4" />
+                <ScalarProperty Name="T5" ColumnName="T5" />
+                <ScalarProperty Name="T6" ColumnName="T6" />
+                <ScalarProperty Name="T7" ColumnName="T7" />
+                <ScalarProperty Name="T8" ColumnName="T8" />
+                <ScalarProperty Name="SOC" ColumnName="SOC" />
+                <ScalarProperty Name="AHC" ColumnName="AHC" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Module_data1">
+            <EntityTypeMapping TypeName="TCP_ethernet_ImmediatelyModel.Module_data1">
+              <MappingFragment StoreEntitySet="Module_data1">
+                <ScalarProperty Name="datatime" ColumnName="datatime" />
+                <ScalarProperty Name="Module_id" ColumnName="Module_id" />
+                <ScalarProperty Name="V1" ColumnName="V1" />
+                <ScalarProperty Name="V2" ColumnName="V2" />
+                <ScalarProperty Name="V3" ColumnName="V3" />
+                <ScalarProperty Name="V4" ColumnName="V4" />
+                <ScalarProperty Name="V5" ColumnName="V5" />
+                <ScalarProperty Name="V6" ColumnName="V6" />
+                <ScalarProperty Name="V7" ColumnName="V7" />
+                <ScalarProperty Name="V8" ColumnName="V8" />
+                <ScalarProperty Name="T1" ColumnName="T1" />
+                <ScalarProperty Name="T2" ColumnName="T2" />
+                <ScalarProperty Name="T3" ColumnName="T3" />
+                <ScalarProperty Name="T4" ColumnName="T4" />
+                <ScalarProperty Name="T5" ColumnName="T5" />
+                <ScalarProperty Name="T6" ColumnName="T6" />
+                <ScalarProperty Name="T7" ColumnName="T7" />
+                <ScalarProperty Name="T8" ColumnName="T8" />
+                <ScalarProperty Name="SOC" ColumnName="SOC" />
+                <ScalarProperty Name="AHC" ColumnName="AHC" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Module_main_data">
+            <EntityTypeMapping TypeName="TCP_ethernet_ImmediatelyModel.Module_main_data">
+              <MappingFragment StoreEntitySet="Module_main_data">
+                <ScalarProperty Name="datatime" ColumnName="datatime" />
+                <ScalarProperty Name="Module_id" ColumnName="Module_id" />
+                <ScalarProperty Name="Vt" ColumnName="Vt" />
+                <ScalarProperty Name="Vmax" ColumnName="Vmax" />
+                <ScalarProperty Name="Vmin" ColumnName="Vmin" />
+                <ScalarProperty Name="Tmax" ColumnName="Tmax" />
+                <ScalarProperty Name="SOC" ColumnName="SOC" />
+                <ScalarProperty Name="AHC" ColumnName="AHC" />
+                <ScalarProperty Name="Tag_Vmax" ColumnName="Tag_Vmax" />
+                <ScalarProperty Name="Tag_Vmin" ColumnName="Tag_Vmin" />
+                <ScalarProperty Name="Tag_Tmax" ColumnName="Tag_Tmax" />
+                <ScalarProperty Name="I_Ba" ColumnName="I_Ba" />
+                <ScalarProperty Name="Ba_site" ColumnName="Ba_site" />
+                <ScalarProperty Name="BaF" ColumnName="BaF" />
+                <ScalarProperty Name="Warning" ColumnName="Warning" />
+                <ScalarProperty Name="Ba_sw" ColumnName="Ba_sw" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Module_main_data1">
+            <EntityTypeMapping TypeName="TCP_ethernet_ImmediatelyModel.Module_main_data1">
+              <MappingFragment StoreEntitySet="Module_main_data1">
+                <ScalarProperty Name="datatime" ColumnName="datatime" />
+                <ScalarProperty Name="Module_id" ColumnName="Module_id" />
+                <ScalarProperty Name="Vt" ColumnName="Vt" />
+                <ScalarProperty Name="Vmax" ColumnName="Vmax" />
+                <ScalarProperty Name="Vmin" ColumnName="Vmin" />
+                <ScalarProperty Name="Tmax" ColumnName="Tmax" />
+                <ScalarProperty Name="SOC" ColumnName="SOC" />
+                <ScalarProperty Name="AHC" ColumnName="AHC" />
+                <ScalarProperty Name="Tag_Vmax" ColumnName="Tag_Vmax" />
+                <ScalarProperty Name="Tag_Vmin" ColumnName="Tag_Vmin" />
+                <ScalarProperty Name="Tag_Tmax" ColumnName="Tag_Tmax" />
+                <ScalarProperty Name="I_Ba" ColumnName="I_Ba" />
+                <ScalarProperty Name="Ba_site" ColumnName="Ba_site" />
+                <ScalarProperty Name="BaF" ColumnName="BaF" />
+                <ScalarProperty Name="Warning" ColumnName="Warning" />
+                <ScalarProperty Name="Ba_sw" ColumnName="Ba_sw" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="無" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
