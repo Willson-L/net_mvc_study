@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TCP_ethernet_ImmediatelyModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Master_data">
+    <Key>
+      <PropertyRef Name="Vall" />
+    </Key>
+    <Property Name="datatime" Type="DateTime" Precision="3" />
+    <Property Name="Vall" Type="Double" Nullable="false" />
+    <Property Name="State" Type="Binary" MaxLength="50" FixedLength="false" />
+    <Property Name="I_pos" Type="Binary" MaxLength="50" FixedLength="false" />
+    <Property Name="I_System" Type="Double" />
+    <Property Name="Switch" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Warning" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="AHC_min" Type="Double" />
+    <Property Name="SOC_min" Type="Double" />
+    <Property Name="Charger_con" Type="Int32" />
+    <Property Name="Tag_Vmax" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Tag_Vmin" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Tag_Tmax" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Master_data1">
+    <Key>
+      <PropertyRef Name="Vall" />
+    </Key>
+    <Property Name="datatime" Type="DateTime" Precision="3" />
+    <Property Name="Vall" Type="Double" Nullable="false" />
+    <Property Name="State" Type="Binary" MaxLength="50" FixedLength="false" />
+    <Property Name="I_pos" Type="Binary" MaxLength="50" FixedLength="false" />
+    <Property Name="I_System" Type="Double" />
+    <Property Name="Switch" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Warning" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="AHC_min" Type="Double" />
+    <Property Name="SOC_min" Type="Double" />
+    <Property Name="Charger_con" Type="Int32" />
+    <Property Name="Tag_Vmax" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Tag_Vmin" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Tag_Tmax" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Module_data">
+    <Key>
+      <PropertyRef Name="datatime" />
+      <PropertyRef Name="Module_id" />
+    </Key>
+    <Property Name="datatime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Module_id" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="V1" Type="Double" />
+    <Property Name="V2" Type="Double" />
+    <Property Name="V3" Type="Double" />
+    <Property Name="V4" Type="Double" />
+    <Property Name="V5" Type="Double" />
+    <Property Name="V6" Type="Double" />
+    <Property Name="V7" Type="Double" />
+    <Property Name="V8" Type="Double" />
+    <Property Name="T1" Type="Double" />
+    <Property Name="T2" Type="Double" />
+    <Property Name="T3" Type="Double" />
+    <Property Name="T4" Type="Double" />
+    <Property Name="T5" Type="Double" />
+    <Property Name="T6" Type="Double" />
+    <Property Name="T7" Type="Double" />
+    <Property Name="T8" Type="Double" />
+    <Property Name="SOC" Type="Double" />
+    <Property Name="AHC" Type="Double" />
+  </EntityType>
+  <EntityType Name="Module_data1">
+    <Key>
+      <PropertyRef Name="datatime" />
+      <PropertyRef Name="Module_id" />
+    </Key>
+    <Property Name="datatime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Module_id" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="V1" Type="Double" />
+    <Property Name="V2" Type="Double" />
+    <Property Name="V3" Type="Double" />
+    <Property Name="V4" Type="Double" />
+    <Property Name="V5" Type="Double" />
+    <Property Name="V6" Type="Double" />
+    <Property Name="V7" Type="Double" />
+    <Property Name="V8" Type="Double" />
+    <Property Name="T1" Type="Double" />
+    <Property Name="T2" Type="Double" />
+    <Property Name="T3" Type="Double" />
+    <Property Name="T4" Type="Double" />
+    <Property Name="T5" Type="Double" />
+    <Property Name="T6" Type="Double" />
+    <Property Name="T7" Type="Double" />
+    <Property Name="T8" Type="Double" />
+    <Property Name="SOC" Type="Double" />
+    <Property Name="AHC" Type="Double" />
+  </EntityType>
+  <EntityType Name="Module_main_data">
+    <Key>
+      <PropertyRef Name="datatime" />
+      <PropertyRef Name="Module_id" />
+      <PropertyRef Name="Vt" />
+      <PropertyRef Name="I_Ba" />
+      <PropertyRef Name="Ba_site" />
+      <PropertyRef Name="BaF" />
+      <PropertyRef Name="Warning" />
+      <PropertyRef Name="Ba_sw" />
+    </Key>
+    <Property Name="datatime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Module_id" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Vt" Type="Double" Nullable="false" />
+    <Property Name="Vmax" Type="Double" />
+    <Property Name="Vmin" Type="Double" />
+    <Property Name="Tmax" Type="Double" />
+    <Property Name="SOC" Type="Double" />
+    <Property Name="AHC" Type="Double" />
+    <Property Name="Tag_Vmax" Type="Double" />
+    <Property Name="Tag_Vmin" Type="Double" />
+    <Property Name="Tag_Tmax" Type="Double" />
+    <Property Name="I_Ba" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Ba_site" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="BaF" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Warning" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Ba_sw" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Module_main_data1">
+    <Key>
+      <PropertyRef Name="datatime" />
+      <PropertyRef Name="Module_id" />
+      <PropertyRef Name="Vt" />
+      <PropertyRef Name="I_Ba" />
+      <PropertyRef Name="Ba_site" />
+      <PropertyRef Name="BaF" />
+      <PropertyRef Name="Warning" />
+      <PropertyRef Name="Ba_sw" />
+    </Key>
+    <Property Name="datatime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Module_id" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Vt" Type="Double" Nullable="false" />
+    <Property Name="Vmax" Type="Double" />
+    <Property Name="Vmin" Type="Double" />
+    <Property Name="Tmax" Type="Double" />
+    <Property Name="SOC" Type="Double" />
+    <Property Name="AHC" Type="Double" />
+    <Property Name="Tag_Vmax" Type="Double" />
+    <Property Name="Tag_Vmin" Type="Double" />
+    <Property Name="Tag_Tmax" Type="Double" />
+    <Property Name="I_Ba" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Ba_site" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="BaF" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Warning" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Ba_sw" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="TCP_ethernet_ImmediatelyEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Master_data" EntityType="Self.Master_data" />
+    <EntitySet Name="Master_data1" EntityType="Self.Master_data1" />
+    <EntitySet Name="Module_data" EntityType="Self.Module_data" />
+    <EntitySet Name="Module_data1" EntityType="Self.Module_data1" />
+    <EntitySet Name="Module_main_data" EntityType="Self.Module_main_data" />
+    <EntitySet Name="Module_main_data1" EntityType="Self.Module_main_data1" />
+  </EntityContainer>
+</Schema>

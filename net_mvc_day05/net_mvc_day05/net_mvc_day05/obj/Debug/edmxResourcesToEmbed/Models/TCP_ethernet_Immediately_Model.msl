@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="TCP_ethernet_ImmediatelyModelStoreContainer" CdmEntityContainer="TCP_ethernet_ImmediatelyEntities">
+    <EntitySetMapping Name="Master_data">
+      <EntityTypeMapping TypeName="TCP_ethernet_ImmediatelyModel.Master_data">
+        <MappingFragment StoreEntitySet="Master_data">
+          <ScalarProperty Name="datatime" ColumnName="datatime" />
+          <ScalarProperty Name="Vall" ColumnName="Vall" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="I_pos" ColumnName="I_pos" />
+          <ScalarProperty Name="I_System" ColumnName="I_System" />
+          <ScalarProperty Name="Switch" ColumnName="Switch" />
+          <ScalarProperty Name="Warning" ColumnName="Warning" />
+          <ScalarProperty Name="AHC_min" ColumnName="AHC_min" />
+          <ScalarProperty Name="SOC_min" ColumnName="SOC_min" />
+          <ScalarProperty Name="Charger_con" ColumnName="Charger_con" />
+          <ScalarProperty Name="Tag_Vmax" ColumnName="Tag_Vmax" />
+          <ScalarProperty Name="Tag_Vmin" ColumnName="Tag_Vmin" />
+          <ScalarProperty Name="Tag_Tmax" ColumnName="Tag_Tmax" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Master_data1">
+      <EntityTypeMapping TypeName="TCP_ethernet_ImmediatelyModel.Master_data1">
+        <MappingFragment StoreEntitySet="Master_data1">
+          <ScalarProperty Name="datatime" ColumnName="datatime" />
+          <ScalarProperty Name="Vall" ColumnName="Vall" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="I_pos" ColumnName="I_pos" />
+          <ScalarProperty Name="I_System" ColumnName="I_System" />
+          <ScalarProperty Name="Switch" ColumnName="Switch" />
+          <ScalarProperty Name="Warning" ColumnName="Warning" />
+          <ScalarProperty Name="AHC_min" ColumnName="AHC_min" />
+          <ScalarProperty Name="SOC_min" ColumnName="SOC_min" />
+          <ScalarProperty Name="Charger_con" ColumnName="Charger_con" />
+          <ScalarProperty Name="Tag_Vmax" ColumnName="Tag_Vmax" />
+          <ScalarProperty Name="Tag_Vmin" ColumnName="Tag_Vmin" />
+          <ScalarProperty Name="Tag_Tmax" ColumnName="Tag_Tmax" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Module_data">
+      <EntityTypeMapping TypeName="TCP_ethernet_ImmediatelyModel.Module_data">
+        <MappingFragment StoreEntitySet="Module_data">
+          <ScalarProperty Name="datatime" ColumnName="datatime" />
+          <ScalarProperty Name="Module_id" ColumnName="Module_id" />
+          <ScalarProperty Name="V1" ColumnName="V1" />
+          <ScalarProperty Name="V2" ColumnName="V2" />
+          <ScalarProperty Name="V3" ColumnName="V3" />
+          <ScalarProperty Name="V4" ColumnName="V4" />
+          <ScalarProperty Name="V5" ColumnName="V5" />
+          <ScalarProperty Name="V6" ColumnName="V6" />
+          <ScalarProperty Name="V7" ColumnName="V7" />
+          <ScalarProperty Name="V8" ColumnName="V8" />
+          <ScalarProperty Name="T1" ColumnName="T1" />
+          <ScalarProperty Name="T2" ColumnName="T2" />
+          <ScalarProperty Name="T3" ColumnName="T3" />
+          <ScalarProperty Name="T4" ColumnName="T4" />
+          <ScalarProperty Name="T5" ColumnName="T5" />
+          <ScalarProperty Name="T6" ColumnName="T6" />
+          <ScalarProperty Name="T7" ColumnName="T7" />
+          <ScalarProperty Name="T8" ColumnName="T8" />
+          <ScalarProperty Name="SOC" ColumnName="SOC" />
+          <ScalarProperty Name="AHC" ColumnName="AHC" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Module_data1">
+      <EntityTypeMapping TypeName="TCP_ethernet_ImmediatelyModel.Module_data1">
+        <MappingFragment StoreEntitySet="Module_data1">
+          <ScalarProperty Name="datatime" ColumnName="datatime" />
+          <ScalarProperty Name="Module_id" ColumnName="Module_id" />
+          <ScalarProperty Name="V1" ColumnName="V1" />
+          <ScalarProperty Name="V2" ColumnName="V2" />
+          <ScalarProperty Name="V3" ColumnName="V3" />
+          <ScalarProperty Name="V4" ColumnName="V4" />
+          <ScalarProperty Name="V5" ColumnName="V5" />
+          <ScalarProperty Name="V6" ColumnName="V6" />
+          <ScalarProperty Name="V7" ColumnName="V7" />
+          <ScalarProperty Name="V8" ColumnName="V8" />
+          <ScalarProperty Name="T1" ColumnName="T1" />
+          <ScalarProperty Name="T2" ColumnName="T2" />
+          <ScalarProperty Name="T3" ColumnName="T3" />
+          <ScalarProperty Name="T4" ColumnName="T4" />
+          <ScalarProperty Name="T5" ColumnName="T5" />
+          <ScalarProperty Name="T6" ColumnName="T6" />
+          <ScalarProperty Name="T7" ColumnName="T7" />
+          <ScalarProperty Name="T8" ColumnName="T8" />
+          <ScalarProperty Name="SOC" ColumnName="SOC" />
+          <ScalarProperty Name="AHC" ColumnName="AHC" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Module_main_data">
+      <EntityTypeMapping TypeName="TCP_ethernet_ImmediatelyModel.Module_main_data">
+        <MappingFragment StoreEntitySet="Module_main_data">
+          <ScalarProperty Name="datatime" ColumnName="datatime" />
+          <ScalarProperty Name="Module_id" ColumnName="Module_id" />
+          <ScalarProperty Name="Vt" ColumnName="Vt" />
+          <ScalarProperty Name="Vmax" ColumnName="Vmax" />
+          <ScalarProperty Name="Vmin" ColumnName="Vmin" />
+          <ScalarProperty Name="Tmax" ColumnName="Tmax" />
+          <ScalarProperty Name="SOC" ColumnName="SOC" />
+          <ScalarProperty Name="AHC" ColumnName="AHC" />
+          <ScalarProperty Name="Tag_Vmax" ColumnName="Tag_Vmax" />
+          <ScalarProperty Name="Tag_Vmin" ColumnName="Tag_Vmin" />
+          <ScalarProperty Name="Tag_Tmax" ColumnName="Tag_Tmax" />
+          <ScalarProperty Name="I_Ba" ColumnName="I_Ba" />
+          <ScalarProperty Name="Ba_site" ColumnName="Ba_site" />
+          <ScalarProperty Name="BaF" ColumnName="BaF" />
+          <ScalarProperty Name="Warning" ColumnName="Warning" />
+          <ScalarProperty Name="Ba_sw" ColumnName="Ba_sw" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Module_main_data1">
+      <EntityTypeMapping TypeName="TCP_ethernet_ImmediatelyModel.Module_main_data1">
+        <MappingFragment StoreEntitySet="Module_main_data1">
+          <ScalarProperty Name="datatime" ColumnName="datatime" />
+          <ScalarProperty Name="Module_id" ColumnName="Module_id" />
+          <ScalarProperty Name="Vt" ColumnName="Vt" />
+          <ScalarProperty Name="Vmax" ColumnName="Vmax" />
+          <ScalarProperty Name="Vmin" ColumnName="Vmin" />
+          <ScalarProperty Name="Tmax" ColumnName="Tmax" />
+          <ScalarProperty Name="SOC" ColumnName="SOC" />
+          <ScalarProperty Name="AHC" ColumnName="AHC" />
+          <ScalarProperty Name="Tag_Vmax" ColumnName="Tag_Vmax" />
+          <ScalarProperty Name="Tag_Vmin" ColumnName="Tag_Vmin" />
+          <ScalarProperty Name="Tag_Tmax" ColumnName="Tag_Tmax" />
+          <ScalarProperty Name="I_Ba" ColumnName="I_Ba" />
+          <ScalarProperty Name="Ba_site" ColumnName="Ba_site" />
+          <ScalarProperty Name="BaF" ColumnName="BaF" />
+          <ScalarProperty Name="Warning" ColumnName="Warning" />
+          <ScalarProperty Name="Ba_sw" ColumnName="Ba_sw" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
