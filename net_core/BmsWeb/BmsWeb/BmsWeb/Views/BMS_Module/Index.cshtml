@@ -1,0 +1,131 @@
+﻿@model IEnumerable<BmsWeb.Models.BMS_module>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.datatime)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.V1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.V2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.V3)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.V4)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.V5)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.V6)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.V7)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.V8)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.T1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.T2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.T3)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.T4)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.T5)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.T6)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.T7)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.T8)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.datatime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.V1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.V2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.V3)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.V4)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.V5)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.V6)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.V7)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.V8)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.T1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.T2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.T3)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.T4)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.T5)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.T6)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.T7)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.T8)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
