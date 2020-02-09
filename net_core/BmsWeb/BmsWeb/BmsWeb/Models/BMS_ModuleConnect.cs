@@ -3,19 +3,22 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
+
 namespace BmsWeb.Models
 {
     public class BMS_ModuleConnect
     {
         public string ConnectionString { get; set; }
-        public BMS_ModuleConnect(string connectionString){
-            this.ConnectionString=connectionString;
+        public BMS_ModuleConnect(string connectionString)
+        {
+            this.ConnectionString = connectionString;
         }
         private MySqlConnection GetConnection()
         {
             return new MySqlConnection(ConnectionString);
         }
-        public List<BMS_module> GetAllBMS_Module() {
+        public List<BMS_module> GetAllBMS_Module()
+        {
             List<BMS_module> list = new List<BMS_module>();
 
             using (MySqlConnection conn = GetConnection())

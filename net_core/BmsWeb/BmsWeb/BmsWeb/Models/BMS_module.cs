@@ -25,6 +25,5 @@ namespace BmsWeb.Models
         public double T6 { get; set; }
         public double T7 { get; set; }
         public double T8 { get; set; }
-
     }
 }
