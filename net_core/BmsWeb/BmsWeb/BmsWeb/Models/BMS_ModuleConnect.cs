@@ -33,22 +33,22 @@ namespace BmsWeb.Models
                         list.Add(new BMS_module()
                         {
                             datatime = Convert.ToDateTime(reader["datatiem"]),
-                            V1 = Convert.ToDouble(reader["V1"]),
-                            V2 = Convert.ToDouble(reader["V2"]),
-                            V3 = Convert.ToDouble(reader["V3"]),
-                            V4 = Convert.ToDouble(reader["V4"]),
-                            V5 = Convert.ToDouble(reader["V5"]),
-                            V6 = Convert.ToDouble(reader["V6"]),
-                            V7 = Convert.ToDouble(reader["V7"]),
-                            V8 = Convert.ToDouble(reader["V8"]),
-                            T1 = Convert.ToDouble(reader["T1"]),
-                            T2 = Convert.ToDouble(reader["T2"]),
-                            T3 = Convert.ToDouble(reader["T3"]),
-                            T4 = Convert.ToDouble(reader["T4"]),
-                            T5 = Convert.ToDouble(reader["T5"]),
-                            T6 = Convert.ToDouble(reader["T6"]),
-                            T7 = Convert.ToDouble(reader["T7"]),
-                            T8 = Convert.ToDouble(reader["T8"]),
+                            V1 = Math.Round( Convert.ToDouble(reader["V1"]),3),
+                            V2 = Math.Round( Convert.ToDouble(reader["V2"]),3),
+                            V3 = Math.Round( Convert.ToDouble(reader["V3"]),3),
+                            V4 = Math.Round( Convert.ToDouble(reader["V4"]),3),
+                            V5 = Math.Round( Convert.ToDouble(reader["V5"]),3),
+                            V6 = Math.Round( Convert.ToDouble(reader["V6"]),3),
+                            V7 = Math.Round( Convert.ToDouble(reader["V7"]),3),
+                            V8 = Math.Round( Convert.ToDouble(reader["V8"]),3),
+                            T1 = Math.Round( Convert.ToDouble(reader["T1"]),3),
+                            T2 = Math.Round( Convert.ToDouble(reader["T2"]),3),
+                            T3 = Math.Round( Convert.ToDouble(reader["T3"]),3),
+                            T4 = Math.Round( Convert.ToDouble(reader["T4"]),3),
+                            T5 = Math.Round( Convert.ToDouble(reader["T5"]),3),
+                            T6 = Math.Round( Convert.ToDouble(reader["T6"]),3),
+                            T7 = Math.Round( Convert.ToDouble(reader["T7"]),3),
+                            T8 = Math.Round( Convert.ToDouble(reader["T8"]),3)
                         });
                     }
                 }

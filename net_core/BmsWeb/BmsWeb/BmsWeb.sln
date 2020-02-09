@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29728.190
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BmsWeb", "BmsWeb\BmsWeb.csproj", "{3597B3CA-0048-4F44-8AE8-B6BF87868B12}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BmsWeb", "BmsWeb\BmsWeb.csproj", "{59E67743-0B7F-49BF-84D4-5E5417EB692B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{3597B3CA-0048-4F44-8AE8-B6BF87868B12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3597B3CA-0048-4F44-8AE8-B6BF87868B12}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3597B3CA-0048-4F44-8AE8-B6BF87868B12}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3597B3CA-0048-4F44-8AE8-B6BF87868B12}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59E67743-0B7F-49BF-84D4-5E5417EB692B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59E67743-0B7F-49BF-84D4-5E5417EB692B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59E67743-0B7F-49BF-84D4-5E5417EB692B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59E67743-0B7F-49BF-84D4-5E5417EB692B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {E040A8B3-0056-49CA-8925-9E86D6F7DC2A}
+		SolutionGuid = {AC2BEED2-61AD-48B0-B2C4-D9F5108B395B}
 	EndGlobalSection
 EndGlobal
