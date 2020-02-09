@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "d:\\Users\\youhao\\Desktop\\net_mvc\\net_core\\BmsWeb(.net core 3.1)\\BmsWeb\\BmsWeb\\BmsWeb.csproj": {}
+    "d:\\Users\\youhao\\Documents\\GitHub\\net_mvc_study\\net_core\\BMSwebsite\\BmsWeb\\BmsWeb\\BmsWeb.csproj": {}
   },
   "projects": {
-    "d:\\Users\\youhao\\Desktop\\net_mvc\\net_core\\BmsWeb(.net core 3.1)\\BmsWeb\\BmsWeb\\BmsWeb.csproj": {
+    "d:\\Users\\youhao\\Documents\\GitHub\\net_mvc_study\\net_core\\BMSwebsite\\BmsWeb\\BmsWeb\\BmsWeb.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\Users\\youhao\\Desktop\\net_mvc\\net_core\\BmsWeb(.net core 3.1)\\BmsWeb\\BmsWeb\\BmsWeb.csproj",
+        "projectUniqueName": "d:\\Users\\youhao\\Documents\\GitHub\\net_mvc_study\\net_core\\BMSwebsite\\BmsWeb\\BmsWeb\\BmsWeb.csproj",
         "projectName": "BmsWeb",
-        "projectPath": "d:\\Users\\youhao\\Desktop\\net_mvc\\net_core\\BmsWeb(.net core 3.1)\\BmsWeb\\BmsWeb\\BmsWeb.csproj",
+        "projectPath": "d:\\Users\\youhao\\Documents\\GitHub\\net_mvc_study\\net_core\\BMSwebsite\\BmsWeb\\BmsWeb\\BmsWeb.csproj",
         "packagesPath": "C:\\Users\\youhao\\.nuget\\packages\\",
-        "outputPath": "d:\\Users\\youhao\\Desktop\\net_mvc\\net_core\\BmsWeb(.net core 3.1)\\BmsWeb\\BmsWeb\\obj\\",
+        "outputPath": "d:\\Users\\youhao\\Documents\\GitHub\\net_mvc_study\\net_core\\BMSwebsite\\BmsWeb\\BmsWeb\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -21,14 +21,14 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp3.1"
+          "netcoreapp2.1"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp3.1": {
+          "netcoreapp2.1": {
             "projectReferences": {}
           }
         },
@@ -39,15 +39,28 @@
         }
       },
       "frameworks": {
-        "netcoreapp3.1": {
+        "netcoreapp2.1": {
           "dependencies": {
-            "Microsoft.Extensions.Logging.Debug": {
+            "Microsoft.AspNetCore.App": {
+              "suppressParent": "All",
               "target": "Package",
-              "version": "[3.1.1, )"
+              "version": "[2.1.1, )",
+              "autoReferenced": true
+            },
+            "Microsoft.AspNetCore.Razor.Design": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.2, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
-              "version": "[3.1.1, )"
+              "version": "[2.1.10, )"
             },
             "MySql.Data": {
               "target": "Package",
@@ -64,14 +77,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
         }
       }
