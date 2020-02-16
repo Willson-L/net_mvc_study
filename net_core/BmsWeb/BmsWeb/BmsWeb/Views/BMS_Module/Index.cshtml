@@ -3,13 +3,82 @@
     ViewData["Title"] = "Index";
 }
 <script type="text/javascript">
-    $.ajax({
-    url: '@Url.Action("GetData", "BMS_Module")',
-    type: "GET",
-    success: function (result) {
-        alert(result);
+    var chdatas = [];
+    function getdata() {
+            $.ajax({
+                url: '@Url.Action("GetData", "BMS_Module")',
+                type: "GET",
+                dataType: 'json',
+                async: true,
+                data:'',
+                success: function (data) {
+                    chdatas = data;
+                    console.log(chdatas);
+                    console.log(chdatas[1]);
+
+                    google.charts.load('current', { 'packages': ['corechart'] });
+                    google.charts.setOnLoadCallback(drawChart);
+                }
+            });
+        }
+    function drawChart() {
+        data1 = 'V1(v)';
+        data2 = 'V2(v)';
+        data3 = 'V3(v)';
+        data4 = 'V4(v)';
+        data5 = 'V5(v)';
+        data6 = 'V6(v)';
+        data7 = 'V7(v)';
+        data8 = 'V8(v)';
+      
+        dataTable = new google.visualization.DataTable();
+        dataTable.addColumn('string', 'Time');
+        dataTable.addColumn('number', data1);
+        dataTable.addColumn('number', data2);
+        dataTable.addColumn('number', data3);
+        dataTable.addColumn('number', data4);
+        dataTable.addColumn('number', data5);
+        dataTable.addColumn('number', data6);
+        dataTable.addColumn('number', data7);
+        dataTable.addColumn('number', data8);
+
+        for (i in chdatas) {
+            console.log(chdatas[i].V1)
+            dataTable.addRows([[i + '', chdatas[i].V1, chdatas[i].V2, chdatas[i].V3, chdatas[i].V4, chdatas[i].V5, chdatas[i].V6, chdatas[i].V7, chdatas[i].V8]]);
+        }
+        options = {
+            title: '趨勢圖',
+            pointSize: 2,
+            height: 280,
+            legend: { position: 'bottom' },
+            hAxis: {
+                title: 'Time(max15min)',
+                maxValue: 600,
+
+            },
+            vAxis: {
+                title: 'value',
+
+            }
+        };
+        chart = new google.visualization.LineChart(document.getElementById('mainchart'));
+
+        chart.draw(dataTable, options);
+        dataTable = null;
+        chart = null;
     }
-    });
+function chartnow() {
+    getdata();
+}
+</script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        getdata();
+        var myVar2 = setInterval(function () {
+                chartnow();
+                //re();
+            }, 3000);
+    });   
 </script>
 <div id="somediv"></div>
     <div class="row">
@@ -143,6 +212,7 @@
             </div>
         </div>
         <div class="col-md-6">
-            <a>dasdadas</a>
+
+            <div id="mainchart" style="width: 800px; height: 300px;border-width:3px;border-style:dashed;border-color:#A9A9A9;padding:5px;"></div>
         </div>
     </div>

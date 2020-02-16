@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Users\\user\\Desktop\\net_mvc_study\\net_core\\BmsWeb\\BmsWeb\\BmsWeb\\BmsWeb.csproj": {}
+    "d:\\Users\\youhao\\Desktop\\新增資料夾 (2)\\net_mvc_study\\net_core\\BmsWeb\\BmsWeb\\BmsWeb\\BmsWeb.csproj": {}
   },
   "projects": {
-    "D:\\Users\\user\\Desktop\\net_mvc_study\\net_core\\BmsWeb\\BmsWeb\\BmsWeb\\BmsWeb.csproj": {
+    "d:\\Users\\youhao\\Desktop\\新增資料夾 (2)\\net_mvc_study\\net_core\\BmsWeb\\BmsWeb\\BmsWeb\\BmsWeb.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Users\\user\\Desktop\\net_mvc_study\\net_core\\BmsWeb\\BmsWeb\\BmsWeb\\BmsWeb.csproj",
+        "projectUniqueName": "d:\\Users\\youhao\\Desktop\\新增資料夾 (2)\\net_mvc_study\\net_core\\BmsWeb\\BmsWeb\\BmsWeb\\BmsWeb.csproj",
         "projectName": "BmsWeb",
-        "projectPath": "D:\\Users\\user\\Desktop\\net_mvc_study\\net_core\\BmsWeb\\BmsWeb\\BmsWeb\\BmsWeb.csproj",
-        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "D:\\Users\\user\\Desktop\\net_mvc_study\\net_core\\BmsWeb\\BmsWeb\\BmsWeb\\obj\\",
+        "projectPath": "d:\\Users\\youhao\\Desktop\\新增資料夾 (2)\\net_mvc_study\\net_core\\BmsWeb\\BmsWeb\\BmsWeb\\BmsWeb.csproj",
+        "packagesPath": "C:\\Users\\youhao\\.nuget\\packages\\",
+        "outputPath": "d:\\Users\\youhao\\Desktop\\新增資料夾 (2)\\net_mvc_study\\net_core\\BmsWeb\\BmsWeb\\BmsWeb\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\youhao\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -52,6 +52,10 @@
             "MySql.Data": {
               "target": "Package",
               "version": "[8.0.19, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
             }
           },
           "imports": [

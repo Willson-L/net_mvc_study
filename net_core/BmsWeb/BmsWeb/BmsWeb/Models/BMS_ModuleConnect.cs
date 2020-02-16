@@ -1,8 +1,10 @@
 ﻿using System;
+using System.Data;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
+using Newtonsoft.Json;
 
 namespace BmsWeb.Models
 {
@@ -17,14 +19,41 @@ namespace BmsWeb.Models
         {
             return new MySqlConnection(ConnectionString);
         }
-        public List<BMS_module> GetAllBMS_Module()
+        public String Getdata(string tsqlcommand)
+        {
+            string str_json = null;
+            using (MySqlConnection conn = GetConnection())
+            {
+                try
+                {
+                    conn.Open();
+                    //MySqlCommand cmd = new MySqlCommand(tsqlcommand, conn);
+
+                    MySqlDataAdapter data = new MySqlDataAdapter(tsqlcommand, conn);
+
+                    DataTable datatable = new DataTable();
+                    data.Fill(datatable);
+                    conn.Close();
+                    str_json = JsonConvert.SerializeObject(datatable, Formatting.Indented);
+
+                    conn.Close();
+                    data.Dispose();
+                    datatable.Dispose();
+                }
+                catch (Exception ex){ 
+                
+                }
+                return str_json;
+            }
+        }
+        public List<BMS_module> GetBMS_ModuleData(string tsqlcommand)
         {
             List<BMS_module> list = new List<BMS_module>();
 
             using (MySqlConnection conn = GetConnection())
             {
                 conn.Open();
-                MySqlCommand cmd = new MySqlCommand("select * from Module_data", conn);
+                MySqlCommand cmd = new MySqlCommand(tsqlcommand, conn);
 
                 using (var reader = cmd.ExecuteReader())
                 {
@@ -52,8 +81,8 @@ namespace BmsWeb.Models
                         });
                     }
                 }
-            }
+            }            
             return list;
-        }
+        }    
     }
 }
