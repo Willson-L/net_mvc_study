@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user\\Documents\\GitHub\\net_mvc_study\\net_core\\BmsWeb\\BmsWeb\\BmsWeb\\BmsWeb.csproj": {}
+    "D:\\Users\\user\\Desktop\\net_mvc_study\\net_core\\BmsWeb\\BmsWeb\\BmsWeb\\BmsWeb.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user\\Documents\\GitHub\\net_mvc_study\\net_core\\BmsWeb\\BmsWeb\\BmsWeb\\BmsWeb.csproj": {
+    "D:\\Users\\user\\Desktop\\net_mvc_study\\net_core\\BmsWeb\\BmsWeb\\BmsWeb\\BmsWeb.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Documents\\GitHub\\net_mvc_study\\net_core\\BmsWeb\\BmsWeb\\BmsWeb\\BmsWeb.csproj",
+        "projectUniqueName": "D:\\Users\\user\\Desktop\\net_mvc_study\\net_core\\BmsWeb\\BmsWeb\\BmsWeb\\BmsWeb.csproj",
         "projectName": "BmsWeb",
-        "projectPath": "C:\\Users\\user\\Documents\\GitHub\\net_mvc_study\\net_core\\BmsWeb\\BmsWeb\\BmsWeb\\BmsWeb.csproj",
+        "projectPath": "D:\\Users\\user\\Desktop\\net_mvc_study\\net_core\\BmsWeb\\BmsWeb\\BmsWeb\\BmsWeb.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Documents\\GitHub\\net_mvc_study\\net_core\\BmsWeb\\BmsWeb\\BmsWeb\\obj\\",
+        "outputPath": "D:\\Users\\user\\Desktop\\net_mvc_study\\net_core\\BmsWeb\\BmsWeb\\BmsWeb\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

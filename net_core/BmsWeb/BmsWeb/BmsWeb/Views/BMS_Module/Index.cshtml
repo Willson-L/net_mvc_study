@@ -1,7 +1,8 @@
 ﻿@model IEnumerable<BmsWeb.Models.BMS_module>
 @{
     ViewData["Title"] = "Index";
-}
+}<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCe9td-e5-jTyDpRw_vkoHdEtbmfPv7FNM&v=3.exp&sensor=false&libraries=places,drawing,geometry">
+</script>
 <script type="text/javascript">
     var chdatas = [];
     var chdatas2 = [];
@@ -184,7 +185,16 @@
         var date1 = y + "-" + m + "-" + d + " " + hh+":"+mm+":"+"00.000";
         var date2 = y2 + "-" + m2 + "-" + d2 + " " + hh2 + ":" + mm2 + ":" + "00.000";
         putdata(date1, date2, searchselect);
-}
+    }
+    function DrawMap() {
+        var latlng = new google.maps.LatLng(24.145440, 120.730024);/*以哪個緯經度中心來產生地圖)*/
+        var myOptions = {
+            zoom: 16,
+            center: latlng,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        map = new google.maps.Map($("#map-canvas")[0], myOptions);
+    }
 </script>
 <script type="text/javascript">
     $(document).ready(function () {
@@ -193,45 +203,23 @@
         spinnerList('#hh2');
         spinnerList('#mm');
         spinnerList('#mm2');
+        DrawMap();
         var myVar2 = setInterval(function () {
-                getdata();
+            getdata();
                 //re();
             }, 3000);
     });   
 </script>
 <div id="somediv"></div>
 <div class="row">
-    <div class="col-md-12">
+    <div class="row">
         <div class="col-md-6">
             <div class="panel panel-info table-responsive scroll" style="border-width:3px;border-style:dashed;border-color:#A9A9A9;padding:5px;">
                 <div class="panel-heading  text-center" style="background-color:mediumseagreen"><span style="font-size:24px">BMS</span></div>
                 <table class="table" style="text-align:center;">
                     <thead>
                         <tr>
-                            <th>
-                                @Html.DisplayNameFor(model => model.V1)
-                            </th>
-                            <th>
-                                @Html.DisplayNameFor(model => model.V2)
-                            </th>
-                            <th>
-                                @Html.DisplayNameFor(model => model.V3)
-                            </th>
-                            <th>
-                                @Html.DisplayNameFor(model => model.V4)
-                            </th>
-                            <th>
-                                @Html.DisplayNameFor(model => model.V5)
-                            </th>
-                            <th>
-                                @Html.DisplayNameFor(model => model.V6)
-                            </th>
-                            <th>
-                                @Html.DisplayNameFor(model => model.V7)
-                            </th>
-                            <th>
-                                @Html.DisplayNameFor(model => model.V8)
-                            </th>
+                            <th>V1</th><th>V2</th><th>V3</th><th>V4</th><th>V5</th><th>V6</th><th>V7</th><th>V8</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -271,30 +259,7 @@
                 <table class="table">
                     <thead>
                         <tr>
-                            <th>
-                                @Html.DisplayNameFor(model => model.T1)
-                            </th>
-                            <th>
-                                @Html.DisplayNameFor(model => model.T2)
-                            </th>
-                            <th>
-                                @Html.DisplayNameFor(model => model.T3)
-                            </th>
-                            <th>
-                                @Html.DisplayNameFor(model => model.T4)
-                            </th>
-                            <th>
-                                @Html.DisplayNameFor(model => model.T5)
-                            </th>
-                            <th>
-                                @Html.DisplayNameFor(model => model.T6)
-                            </th>
-                            <th>
-                                @Html.DisplayNameFor(model => model.T7)
-                            </th>
-                            <th>
-                                @Html.DisplayNameFor(model => model.T8)
-                            </th>
+                            <th>T1</th><th>T2</th><th>T3</th><th>T4</th><th>T5</th><th>T6</th><th>T7</th><th>T8</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -330,12 +295,11 @@
                     </tbody>
                 </table>
             </div>
-        </div>
-        <div class=" col-md-6"></div><br />
+        </div>        
+        <div class=" col-md-6"><div id="map-canvas" style="height:277px;width:580px"></div><br /></div>               
     </div>
     <div class="col-md-12">
-        <div id="mainchart" class="panel panel-info " style="border-width:3px;border-style:dashed;border-color:#A9A9A9;padding:5px;"></div>
-        <br />
+        <div id="mainchart" class="card " style="border-width:3px;border-style:dashed;border-color:#A9A9A9;padding:5px;"></div><br />
     </div>
     <div class="row">
         <div class="col-md-4">
