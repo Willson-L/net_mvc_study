@@ -19,8 +19,13 @@ namespace BmsWeb.Controllers
         {            
             BMS_ModuleConnect context = HttpContext.RequestServices.GetService(typeof(BmsWeb.Models.BMS_ModuleConnect)) as BMS_ModuleConnect;
             String datajson = context.Getdata("SELECT * FROM module_data; ").ToString();
-            //return  Json(context.Getdata("SELECT * FROM module_data; "));
             return  Content(datajson);
         }
+        [HttpPost]
+        public ContentResult PostData() {
+            BMS_ModuleConnect context = HttpContext.RequestServices.GetService(typeof(BmsWeb.Models.BMS_ModuleConnect)) as BMS_ModuleConnect;
+            String datajson=context.ProcessRequest(HttpContext.Request.Form["date1"],HttpContext.Request.Form["date2"],HttpContext.Request.Form["value"]);
+            return Content(datajson);
+        }        
     }
 }

@@ -254,10 +254,6 @@ D:\Users\user\Desktop\net_mvc_study\net_core\BmsWeb\BmsWeb\BmsWeb\obj\Debug\netc
 D:\Users\user\Desktop\net_mvc_study\net_core\BmsWeb\BmsWeb\BmsWeb\obj\Debug\netcoreapp3.1\BmsWeb.TagHelpers.output.cache
 D:\Users\user\Desktop\net_mvc_study\net_core\BmsWeb\BmsWeb\BmsWeb\obj\Debug\netcoreapp3.1\BmsWeb.RazorCoreGenerate.cache
 D:\Users\user\Desktop\net_mvc_study\net_core\BmsWeb\BmsWeb\BmsWeb\obj\Debug\netcoreapp3.1\Razor\Views\BMS_Module\Index.cshtml.g.cs
-D:\Users\user\Desktop\net_mvc_study\net_core\BmsWeb\BmsWeb\BmsWeb\obj\Debug\netcoreapp3.1\Razor\Views\Home\About.cshtml.g.cs
-D:\Users\user\Desktop\net_mvc_study\net_core\BmsWeb\BmsWeb\BmsWeb\obj\Debug\netcoreapp3.1\Razor\Views\Home\Contact.cshtml.g.cs
-D:\Users\user\Desktop\net_mvc_study\net_core\BmsWeb\BmsWeb\BmsWeb\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
-D:\Users\user\Desktop\net_mvc_study\net_core\BmsWeb\BmsWeb\BmsWeb\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
 D:\Users\user\Desktop\net_mvc_study\net_core\BmsWeb\BmsWeb\BmsWeb\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
 D:\Users\user\Desktop\net_mvc_study\net_core\BmsWeb\BmsWeb\BmsWeb\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_CookieConsentPartial.cshtml.g.cs
 D:\Users\user\Desktop\net_mvc_study\net_core\BmsWeb\BmsWeb\BmsWeb\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs

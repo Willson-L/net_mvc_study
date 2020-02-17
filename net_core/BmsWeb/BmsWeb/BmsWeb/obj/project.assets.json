@@ -7456,23 +7456,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\youhao\\.nuget\\packages\\": {},
+    "C:\\Users\\user\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "d:\\Users\\youhao\\Desktop\\新增資料夾 (2)\\net_mvc_study\\net_core\\BmsWeb\\BmsWeb\\BmsWeb\\BmsWeb.csproj",
+      "projectUniqueName": "D:\\Users\\user\\Desktop\\net_mvc_study\\net_core\\BmsWeb\\BmsWeb\\BmsWeb\\BmsWeb.csproj",
       "projectName": "BmsWeb",
-      "projectPath": "d:\\Users\\youhao\\Desktop\\新增資料夾 (2)\\net_mvc_study\\net_core\\BmsWeb\\BmsWeb\\BmsWeb\\BmsWeb.csproj",
-      "packagesPath": "C:\\Users\\youhao\\.nuget\\packages\\",
-      "outputPath": "d:\\Users\\youhao\\Desktop\\新增資料夾 (2)\\net_mvc_study\\net_core\\BmsWeb\\BmsWeb\\BmsWeb\\obj\\",
+      "projectPath": "D:\\Users\\user\\Desktop\\net_mvc_study\\net_core\\BmsWeb\\BmsWeb\\BmsWeb\\BmsWeb.csproj",
+      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+      "outputPath": "D:\\Users\\user\\Desktop\\net_mvc_study\\net_core\\BmsWeb\\BmsWeb\\BmsWeb\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\youhao\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

@@ -8,7 +8,7 @@ using Newtonsoft.Json;
 
 namespace BmsWeb.Models
 {
-    public class BMS_ModuleConnect
+    public class BMS_ModuleConnect 
     {
         public string ConnectionString { get; set; }
         public BMS_ModuleConnect(string connectionString)
@@ -18,6 +18,28 @@ namespace BmsWeb.Models
         private MySqlConnection GetConnection()
         {
             return new MySqlConnection(ConnectionString);
+        }
+        public String ProcessRequest(string date1,string date2,string values)
+        {
+            String tsqlcommand = "";
+            switch (values) {
+                case "Vall":
+                    values = "V1,V2,V3,V4,V5,V6,V7,V8";
+                    break;
+                case "Tall":
+                    values = "T1,T2,T3,T4,T5,T6,T7,T8";
+                    break;
+                default:
+                    break;
+            }
+            tsqlcommand = "SELECT "+values+" FROM module_data where datatime between'" + date1 +"'and'"+date2+"';";
+            String strtt = this.Getdata(tsqlcommand);
+            return (strtt);
+            /*String str = context.Request.Form["sqlstr"]; 
+
+            context.Response.ContentType = "text/plain";
+            context.Response.Write(this.GetData());*/
+
         }
         public String Getdata(string tsqlcommand)
         {
