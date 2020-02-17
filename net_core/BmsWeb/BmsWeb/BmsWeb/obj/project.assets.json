@@ -7462,11 +7462,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Users\\user\\Desktop\\net_mvc_study\\net_core\\BmsWeb\\BmsWeb\\BmsWeb\\BmsWeb.csproj",
+      "projectUniqueName": "C:\\Users\\user\\Documents\\GitHub\\net_mvc_study\\net_core\\BmsWeb\\BmsWeb\\BmsWeb\\BmsWeb.csproj",
       "projectName": "BmsWeb",
-      "projectPath": "D:\\Users\\user\\Desktop\\net_mvc_study\\net_core\\BmsWeb\\BmsWeb\\BmsWeb\\BmsWeb.csproj",
+      "projectPath": "C:\\Users\\user\\Documents\\GitHub\\net_mvc_study\\net_core\\BmsWeb\\BmsWeb\\BmsWeb\\BmsWeb.csproj",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "D:\\Users\\user\\Desktop\\net_mvc_study\\net_core\\BmsWeb\\BmsWeb\\BmsWeb\\obj\\",
+      "outputPath": "C:\\Users\\user\\Documents\\GitHub\\net_mvc_study\\net_core\\BmsWeb\\BmsWeb\\BmsWeb\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
